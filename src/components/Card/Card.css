@@ -5,15 +5,31 @@
     border-radius: 5px;
     margin: 0px auto;
   }
-  
+  .inner-container{
+    display: flex;
+  }
+  p{
+    margin: 0px;
+  }
   .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
   
-  img {
-    border-radius: 5px 5px 0 0;
+  .card-icon {
+    padding: 2px 0px 0px 10px;
+  }
+  .card-title{
+    display: flex;
+    justify-content: center;
   }
   
   .container {
     padding: 2px 16px;
+  }
+
+  .container2{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 10px;
   }
