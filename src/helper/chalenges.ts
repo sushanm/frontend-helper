@@ -1,0 +1,15 @@
+export const challenges = [
+    { title: "Accordion", link: "/0/accordion", description:"Accordian application", isNew: false, isDisabled:true },
+    { title: "Counter", link: "/1/counter", description:"This is simple counter application", isNew: true, isDisabled:false },
+    { title: "Star Rating", link: "/2/star-Rating", isNew: false,isDisabled:true },
+    { title: "Guess the number", link: "#",isDisabled:true },
+    { title: "Telephone formatter", link: "#",isDisabled:true },
+    { title: "Light & Dark mode", link: "#",isDisabled:true },
+    { title: "Toast Popup", link: "#",isDisabled:true },
+    { title: "Password Strength", link: "#",isDisabled:true },
+    { title: "Pixel Art", link: "#",isDisabled:true},
+    { title: "Color Spotter", link: "#" ,isDisabled:true},
+    { title: "Todo List", link: "#",isDisabled:true },
+    { title: "Tic-Tac-Toe", link: "#" ,isDisabled:true},
+    { title: "Chess board", link: "#",isDisabled:true },
+  ];

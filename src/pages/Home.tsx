@@ -3,24 +3,28 @@ import Card from '../components/Card/Card'
 import { useNavigate } from "react-router-dom";
 import "./common.css"
 import { AiOutlineAppstoreAdd } from "react-icons/ai";
-function Home() {
-    const navigate = useNavigate();
+import { challenges } from '../helper/chalenges';
 
-    const coursesPage = (path:string) => {
-        navigate(path)
-    }
+function Home() {
+  const navigate = useNavigate();
+
+  const coursesPage = (path: string) => {
+   console.log(path)
+    navigate(path)
+  }
   return (
-    <div className='home-container'>
-      <Card onClick={()=>coursesPage('/counter')} name="Couter Application" description="This is simple counter application" icon={<AiOutlineAppstoreAdd />}/>
-      <Card onClick={()=>coursesPage('/counter')} />
-      <Card onClick={()=>coursesPage('/counter')} />
-      <Card onClick={()=>coursesPage('/counter')} />
-      <Card onClick={()=>coursesPage('/counter')} />
-      <Card onClick={()=>coursesPage('/counter')} />
-      <Card onClick={()=>coursesPage('/counter')} />
-      <Card onClick={()=>coursesPage('/counter')} />
-      <Card onClick={()=>coursesPage('/counter')} />
-      <Card onClick={()=>coursesPage('/counter')} />
+    <div>
+
+      <div className='home-container'>
+        {challenges.map((challenge) => (
+
+
+          <Card key={challenge.title} onClick={() => coursesPage(challenge.link)} name={challenge.title} description="This is simple counter application" icon={<AiOutlineAppstoreAdd />} />
+
+
+        ))}
+
+      </div>
     </div>
   )
 }

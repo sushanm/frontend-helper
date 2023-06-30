@@ -2,3 +2,12 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+.header-section{
+    margin: 20px 10px;
+    display: flex;
+    border-bottom-width: 3px;
+    border-bottom-color: rgb(189, 152, 3);
+    border-bottom-style: double;
+    padding-bottom: 10px;
+}

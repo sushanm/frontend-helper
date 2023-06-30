@@ -1,20 +1,14 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from './pages/Layout';
-import Counter from './pages/Counter';
+
 import Home from './pages/Home';
 
 function App() {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-        <Route path="/" index element={<Home />} />
-          <Route path="counter" element={<Counter />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <div className="container text-center">
+      <h1>Front end challenges for learning!!!</h1>
+      <Home />
+    </div>
   );
 }
 
