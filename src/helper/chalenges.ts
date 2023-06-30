@@ -1,8 +1,8 @@
 export const challenges = [
-    { title: "Accordion", link: "/0/accordion", description:"Accordian application", isNew: false, isDisabled:true },
+    { title: "Accordion", link: "#", description:"Accordian application", isNew: false, isDisabled:true },
     { title: "Counter", link: "/1/counter", description:"This is simple counter application", isNew: true, isDisabled:false },
-    { title: "Star Rating", link: "/2/star-Rating", isNew: false,isDisabled:true },
-    { title: "Guess the number", link: "#",isDisabled:true },
+    { title: "Star Rating", link: "#", isNew: false,isDisabled:true },
+    { title: "Guess the number", link: "#",isDisabled:false, inProgess:true },
     { title: "Telephone formatter", link: "#",isDisabled:true },
     { title: "Light & Dark mode", link: "#",isDisabled:true },
     { title: "Toast Popup", link: "#",isDisabled:true },

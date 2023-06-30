@@ -19,7 +19,9 @@ function Home() {
         {challenges.map((challenge) => (
 
 
-          <Card key={challenge.title} onClick={() => coursesPage(challenge.link)} name={challenge.title} description="This is simple counter application" icon={<AiOutlineAppstoreAdd />} />
+          <Card key={challenge.title} onClick={() => coursesPage(challenge.link)} name={challenge.title} description={challenge.description}
+          isDisabled={challenge.isDisabled}
+          isNew={challenge.isNew} inProgess={challenge.inProgess} icon={<AiOutlineAppstoreAdd />} />
 
 
         ))}

@@ -33,3 +33,22 @@
     justify-content: space-evenly;
     padding: 10px;
   }
+  .in-progress-badge{
+    color: rgb(3, 166, 11);
+    animation: blinker 1s linear infinite;
+  }
+  .new-badge {
+    color: red;
+    animation: blinker 1s linear infinite;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+
+  .card-header{
+    display: flex;
+    justify-content: space-between;
+  }
